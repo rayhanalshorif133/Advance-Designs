@@ -30,26 +30,50 @@ body {
     color: #f6287c;
 }
 
-.menu-icon-1 span ,
+.menu-icon-1 span,
 .menu-icon-2 span {
-    width: 40px;
-    height: 5px;
+    width: 55px;
+    height: 7px;
     background-color: #ffffff;
-    margin: 8px 0;
+    margin: 10px 0;
     display: block;
+    transition: all 0.5s ease-in-out;
 }
 
-.menu-icon-container-1 input,
-.menu-icon-container-2 input {
-    display: none;
-}
 
 .menu-icon-container-1 {
-    background: #28d7f6;
+    background-image: linear-gradient(to top, #1c7a7a 0%, #330867 100%);
     margin: 0 10px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 .menu-icon-container-2 {
-    background: #f6287c;
+    background-image: linear-gradient(to top, #1c7a7a 0%, #330867 100%);
     margin: 0 10px;
+    padding: 10px;
+}
+
+
+.menu-icon-container-1:hover {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-icon-container-1:hover .menu-icon-1 span:nth-child(1) {
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    rotate: 45deg;
+}
+
+.menu-icon-container-1:hover .menu-icon-1 span:nth-child(2) {
+
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-icon-container-1:hover .menu-icon-1 span:nth-child(3) {
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    rotate: -45deg;
 }
