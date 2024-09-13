@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+
+
+.container{
+    margin: 20rem 0 0 20rem;
+}
+
+.container .circle{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background: #e95555;
+    transition: all 0.5s ease-in-out;
+}
+
+.container .circle:hover{
+    cursor: pointer;  
+    transform: translateX(); 
+}
+
+.container .box{
+    transform: translateX(300px);
+}
+
+
+
